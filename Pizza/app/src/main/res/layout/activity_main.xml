@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/pizzalogo"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="#deb887"
+        android:src="@drawable/pizzalogo" />
+
+
+    <ImageView
+        android:id="@+id/pizza"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/pizzalogo"
+        android:src="@drawable/pizza" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pizza"
+        android:text="Dominos"
+        android:fontFamily="sans-serif"
+        android:layout_marginLeft="50dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="30sp"/>
+    <ImageView
+        android:id="@+id/location"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/name"
+        android:src="@drawable/location" />
+    <TextView
+        android:id="@+id/locationname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_toRightOf="@id/location"
+        android:text="Coimbatore"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:textSize="30sp"/>
+
+    <ImageView
+        android:id="@+id/contact"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/location"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/contact" />
+
+    <TextView
+        android:id="@+id/contactnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/locationname"
+        android:layout_toRightOf="@id/contact"
+        android:text="9988566772"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:textSize="30sp"/>
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact"
+        android:text="Description"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/black"
+        android:textSize="30sp"/>
+    <TextView
+        android:id="@+id/contactnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/desc"
+        android:text="Mobile app where users can compose their own pizza by choosing desired ingredients and order it."
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/black"
+        android:textSize="30sp"/>
+
+</RelativeLayout>
